@@ -8,9 +8,45 @@
 :root {
     --main-background: #1e293b;
     --text-color: #e2e8f0;
+    --nav-background: #475569;
 }
 
 body {
     background: var(--main-background);
     color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+nav {
+    background-color: var(--nav-background);
+    width: fit-content;
+    padding: 25px;
+}
+
+nav  a {
+    color: var(--main-background);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--text-color);
+    
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+li:hover {
+    transform: scale(1.1);
+    transition: all ease-in .4s;
 }
